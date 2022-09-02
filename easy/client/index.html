@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Easy | Topcoder Skill Builder Competition | Javascript Learning
+    </title>
+    <script src="./script.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #5256ad;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        .date-time-wrapper {
+            width: 60%;
+            display: none;
+        }
+
+        .date {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px dashed white;
+            padding-right: 40px;
+        }
+
+        .time {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 40px;
+        }
+
+        .box {
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        .divider {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="date-time-wrapper" id="show">
+        <div class="date">
+            <span class="box" id="year"></span>
+            <span class="divider">-</span>
+            <span class="box" id="month"></span>
+            <span class="divider">-</span>
+            <span class="box" id="day"></span>
+        </div>
+        <div class="time">
+            <span class="box" id="hour"></span>
+            <span class="divider">:</span>
+            <span class="box" id="minute"></span>
+            <span class="divider">:</span>
+            <span class="box" id="second"></span>
+        </div>
+    </div>
+</body>
+</html>
